@@ -34,5 +34,5 @@ Web scraping tools like `requests` or `httpx` often break when session cookies e
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/yourusername/real-time-cookie-extractor.git
+   git clone https://github.com/subhanalii/real-time-cookie-extractor.git
    cd real-time-cookie-extractor
