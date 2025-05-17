@@ -14,7 +14,7 @@ def get_cookies_from_browser():
         driver = webdriver.Chrome(options=options)
         driver.get("https://tradingview.com")
         
-        time.sleep(12)  # Give JS time to run
+        time.sleep(3)  # Give JS time to run
         cookies = driver.get_cookies()
         driver.quit()
         
@@ -30,5 +30,8 @@ if cookies:
 else:
     print("No cookies extracted.")
 
-# response = requests.get('targetwebsite.com',cookies=cookies)
-# soup = bs(response.content,'lxml')
+
+response = requests.get('https://tradingview.com',cookies=cookies)
+print(response.status_code)
+
+print("-----continue and enjoy scraping -----")
